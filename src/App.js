@@ -17,7 +17,7 @@ const Header = () => {
   );
 };
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
   return (
     <div className="card" style={{ background: "white" }}>
       <img
@@ -25,42 +25,34 @@ const RestaurantCard = () => {
         alt="res-logo"
         src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/fundrz2tguru4dkbl8wn"
       />
-      <h3>Tiffen Depot</h3>
-      <p>South Indian,Nanakramguda</p>
+      <h3>{ props.resName}</h3>
+      <p>{ props.cuisine}</p>
       <p>4.3 ratings</p>
       <p>20 minuts</p>
     </div>
   );
-}
+};
 
 const Body = () => {
   return (
     <div className="body">
       <div className="search">Search</div>
       <div className="restaurant-list">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard
+          resName="Tiffen Depot"
+          cuisine="South Indian, South Indian,Nanakramguda"
+        />
+        <RestaurantCard resName="KFC" cuisine="Berger, Fast Foods" />
       </div>
     </div>
   );
-}
+};
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <Body/>
+      <Body />
     </div>
   );
 };
