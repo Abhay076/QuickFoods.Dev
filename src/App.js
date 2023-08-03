@@ -18,6 +18,7 @@ const Header = () => {
 };
 
 const RestaurantCard = (props) => {
+  const { resName, cuision } = props;
   return (
     <div className="card" style={{ background: "white" }}>
       <img
@@ -25,8 +26,8 @@ const RestaurantCard = (props) => {
         alt="res-logo"
         src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/fundrz2tguru4dkbl8wn"
       />
-      <h3>{ props.resName}</h3>
-      <p>{ props.cuisine}</p>
+      <h3>{ resName}</h3>
+      <p>{ cuision}</p>
       <p>4.3 ratings</p>
       <p>20 minuts</p>
     </div>
