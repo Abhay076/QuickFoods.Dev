@@ -6,7 +6,7 @@ const Body = () => {
       type: "restaurant",
       data: {
         id: "434623",
-        name: "The Spicy Venue",
+        name: "The Spicy Venue I",
         cloudinaryImageId: "eay2ftdkm4dszglx5nj5",
         locality: "Narsingi & Kokapet",
         areaName: "Kokapet",
@@ -196,7 +196,7 @@ const Body = () => {
       type: "restaurant",
       data: {
         id: "434623",
-        name: "The Spicy Venue -I ",
+        name: "The Spicy Venue - II ",
         cloudinaryImageId: "eay2ftdkm4dszglx5nj5",
         locality: "Narsingi & Kokapet",
         areaName: "Kokapet",
