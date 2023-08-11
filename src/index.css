@@ -70,3 +70,7 @@ body{
 .search{
     margin: 15px;
 }
+.filter{
+    margin: 15px;
+    cursor: pointer;
+}
