@@ -61,8 +61,10 @@ body {
   background-color: #15605e;
   color: white;
 }
-.filter_btn {
-  margin: 20px;
+.filter-btn {
+  margin: 15px;
+  background-color: black;
+  color: white;
   cursor: pointer;
 }
 .search {
@@ -153,4 +155,13 @@ body {
 
 .login{
     cursor: pointer;
+}
+
+.filter{
+    display: flex;
+}
+.s{
+  margin-left: 5px;
+  background-color: black;
+  color: white;
 }
