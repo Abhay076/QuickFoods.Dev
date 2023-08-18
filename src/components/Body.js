@@ -24,10 +24,10 @@ const Body = () => {
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
-  if (listOfRestaurants?.length === 0) {
-    return <Shimmer />;
-  }
-  return (
+
+  return listOfRestaurants?.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <div className="filter">
         <button
@@ -43,7 +43,7 @@ const Body = () => {
         </button>
       </div>
       <div className="restaurant-list">
-        {listOfRestaurants?.map((restaurant, index) => (
+        {listOfRestaurants?.map((restaurant) => (
           <RestaurantCard key={restaurant.info.id} resData={restaurant} />
         ))}
       </div>
