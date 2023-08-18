@@ -1,76 +1,152 @@
-body{
-    font-family: Roboto;
-    margin: 0;
-    /* background-color:#eee; */
-    padding: 0;
+body {
+  font-family: Roboto;
+  margin: 0;
+  /* background-color:#eee; */
+  padding: 0;
 }
 .logo {
-    width: 50px;
+  width: 50px;
 }
 .header {
-    display: flex;
-    background-color: #15605e;
-    color: #fff;
-    /* padding:1rem;
+  display: flex;
+  background-color: #15605e;
+  color: #fff;
+  /* padding:1rem;
      */
-     /* padding-right: 2rem; */
-     padding: 1rem;
-    justify-content: space-between;
+  /* padding-right: 2rem; */
+  padding: 1rem;
+  justify-content: space-between;
 }
-.nav-items ul{
-    display: flex;
-    gap: 2rem;
-    padding: 0;
+.nav-items ul {
+  display: flex;
+  gap: 2rem;
+  padding: 0;
 }
-.nav-items ul li{
-    list-style: none;
-} 
-.restaurant-list{
-    width:90%;
-    margin:2rem  auto;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap: 1rem;
+.nav-items ul li {
+  list-style: none;
+}
+.restaurant-list {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 .card {
-    padding: 1rem;
-    width:210px;
-    border-radius:5px;
-    box-shadow:5px 5px 10px 0 gray;
-
-
+  padding: 1rem;
+  width: 210px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0 gray;
 }
-.card:hover{
+.card:hover {
   cursor: pointer;
   border: 1px solid black;
 }
 .ratings {
-    display:flex;
-    justify-content:space-between;
-    border-radius:5px;
-    margin-top:1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-top: 1rem;
 }
 .card > img {
-    width:100%;
-    height: 200px;
-    border-radius:5px;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
 }
 .footer {
-    text-align:center;
-    padding:1rem;
-    margin-top:2rem;
-    background-color:#15605e;
-    color:white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #15605e;
+  color: white;
 }
-.filter_btn{
-    margin: 20px;
-    cursor: pointer;
+.filter_btn {
+  margin: 20px;
+  cursor: pointer;
 }
-.search{
-    margin: 15px;
+.search {
+  margin: 15px;
 }
-.filter{
-    margin: 15px;
-    cursor: pointer;
+.filter {
+  margin: 15px;
+  cursor: pointer;
+}
+
+/* Shimmer UI CSS */
+
+.shimmer-card {
+  position: relative;
+  -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 50px;
+  overflow: hidden;
+  width: 210px;
+  justify-content: center;
+}
+.shimmerBG {
+  animation-duration: 2.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
+  background: #ddd;
+  background: linear-gradient(to right, #f6f6f6 8%, #f0f0f0 18%, #f6f6f6 33%);
+  background-size: 1200px 100%;
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: 1200px 0;
+  }
+}
+
+.media {
+  height: 200px;
+}
+
+.p-32 {
+  padding: 32px;
+}
+
+.title-line {
+  height: 24px;
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 20px;
+}
+
+.content-line {
+  height: 8px;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.end {
+  width: 40%;
+}
+
+.m-t-24 {
+  margin-top: 24px;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
 }
